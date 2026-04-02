@@ -1,0 +1,44 @@
+# Nami Light Theme for Alacritty
+# https://github.com/micdzu/nami.nvim
+
+[colors.primary]
+background = "#F0E8FF"
+foreground = "#2A254A"
+
+[colors.cursor]
+text = "#F0E8FF"
+cursor = "#2A254A"
+
+[colors.selection]
+text = "#2A254A"
+background = "#C8BFF0"
+
+[colors.normal]
+black = "#2A254A"
+red = "#A2556A"
+green = "#647F58"
+yellow = "#A87055"
+blue = "#59699C"
+magenta = "#865C99"
+cyan = "#497E7B"
+white = "#F0E8FF"
+
+[colors.bright]
+black = "#665E96"
+red = "#A2556A"
+green = "#647F58"
+yellow = "#A87055"
+blue = "#59699C"
+magenta = "#865C99"
+cyan = "#497E7B"
+white = "#F5F0FF"  # Slightly lighter than background, fits Nami palette
+
+[[colors.indexed_colors]]
+index = 16
+name = "Orange"
+color = "#A87055"
+
+[[colors.indexed_colors]]
+index = 17
+name = "Pink"
+color = "#865C99"

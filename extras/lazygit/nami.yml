@@ -1,0 +1,44 @@
+# Nami Theme for Lazygit
+# https://github.com/micdzu/nami.nvim
+# Copy to ~/.config/lazygit/config.yml
+
+gui:
+  theme:
+    # Active/selected items
+    activeBorderColor:
+      - "#8AA2F0"  # blue
+      - bold
+    inactiveBorderColor:
+      - "#6B6796"  # lavender muted
+
+    # Options menu
+    optionsTextColor:
+      - "#CF8EEC"  # magenta
+
+    # Selected items
+    selectedLineBgColor:
+      - "#2F2A55"  # selection bg
+    selectedRangeBgColor:
+      - "#2F2A55"  # selection bg
+
+    # Cherry-picked commits
+    cherryPickedCommitBgColor:
+      - "#1A1732"  # bg
+    cherryPickedCommitFgColor:
+      - "#CF8EEC"  # magenta
+
+    # Marked commits (for squash/fixup)
+    markedRangeBgColor:
+      - "#2F2A55"  # selection
+    markedRangeFgColor:
+      - "#C9C2FF"  # fg
+
+    # Status/staging
+    unstagedChangesColor:
+      - "#E87A98"  # red
+    stagedChangesColor:
+      - "#A7D494"  # green
+
+    # Default text
+    defaultFgColor:
+      - "#C9C2FF"  # fg

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Nami</string>
+    <key>colorSpaceName</key>
+    <string>sRGB</string>
+    <key>settings</key>
+    <array>
+        <!-- Base settings -->
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#1A1732</string>
+                <key>foreground</key>
+                <string>#C9C2FF</string>
+                <key>caret</key>
+                <string>#C9C2FF</string>
+                <key>selection</key>
+                <string>#2F2A55</string>
+                <key>lineHighlight</key>
+                <string>#211E3F</string>
+            </dict>
+        </dict>
+        <!-- Comments: lavender (muted) -->
+        <dict>
+            <key>name</key>
+            <string>Comment</string>
+            <key>scope</key>
+            <string>comment, punctuation.definition.comment</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#6B6796</string>
+                <key>fontStyle</key>
+                <string>italic</string>
+            </dict>
+        </dict>
+        <!-- Strings: green -->
+        <dict>
+            <key>name</key>
+            <string>String</string>
+            <key>scope</key>
+            <string>string, punctuation.definition.string</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#A7D494</string>
+            </dict>
+        </dict>
+        <!-- Constants: magenta -->
+        <dict>
+            <key>name</key>
+            <string>Constant</string>
+            <key>scope</key>
+            <string>constant, constant.numeric, constant.language, support.constant</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#CF8EEC</string>
+            </dict>
+        </dict>
+        <!-- Definitions (Functions/Types): blue -->
+        <dict>
+            <key>name</key>
+            <string>Function</string>
+            <key>scope</key>
+            <string>entity.name.function, support.function</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#8AA2F0</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Class/Type</string>
+            <key>scope</key>
+            <string>entity.name.type, support.type, entity.name.class, entity.name.struct</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#8AA2F0</string>
+            </dict>
+        </dict>
+        <!-- Keywords: bold foreground -->
+        <dict>
+            <key>name</key>
+            <string>Keyword</string>
+            <key>scope</key>
+            <string>keyword, storage.type, storage.modifier</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#C9C2FF</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <!-- Variables: default foreground -->
+        <dict>
+            <key>name</key>
+            <string>Variable</string>
+            <key>scope</key>
+            <string>variable, support.variable</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#C9C2FF</string>
+            </dict>
+        </dict>
+        <!-- Operators: default foreground -->
+        <dict>
+            <key>name</key>
+            <string>Operator</string>
+            <key>scope</key>
+            <string>keyword.operator</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#C9C2FF</string>
+            </dict>
+        </dict>
+        <!-- Markdown headings: blue -->
+        <dict>
+            <key>name</key>
+            <string>Markup Heading</string>
+            <key>scope</key>
+            <string>markup.heading</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#8AA2F0</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        <!-- Diff colors -->
+        <dict>
+            <key>name</key>
+            <string>Diff Inserted</string>
+            <key>scope</key>
+            <string>markup.inserted</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#A7D494</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Diff Deleted</string>
+            <key>scope</key>
+            <string>markup.deleted</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E87A98</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Diff Changed</string>
+            <key>scope</key>
+            <string>markup.changed</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#F0A07A</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

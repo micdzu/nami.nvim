@@ -1,0 +1,11 @@
+# Nami Light Theme for FZF
+# https://github.com/micdzu/nami.nvim
+# Add to ~/.bashrc or ~/.zshrc:
+# export FZF_DEFAULT_OPTS="$(cat ~/.config/fzf/nami-light.opts)"
+
+--color=fg:#2A254A,fg+:#2A254A,bg:#F0E8FF,bg+:#C8BFF0
+--color=hl:#59699C,hl+:#59699C,info:#665E96,marker:#647F58
+--color=prompt:#865C99,spinner:#497E7B,pointer:#865C99,header:#665E96
+--color=border:#665E96,label:#2A254A,query:#2A254A
+--border="rounded" --border-label="" --preview-window="border-rounded"
+--prompt="> " --marker=">" --pointer="◆" --separator="─"

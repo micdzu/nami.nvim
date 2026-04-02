@@ -1,0 +1,151 @@
+# Nami Theme for Yazi
+# https://github.com/micdzu/nami.nvim
+# Copy to ~/.config/yazi/theme.toml
+
+[manager]
+# File list styling
+cwd = { fg = "#8AA2F0" }  # Blue = current directory
+
+# Hovered/selected items
+hovered = { bg = "#2F2A55", fg = "#C9C2FF" }
+preview_hovered = { bg = "#2F2A55" }
+selected = { bg = "#2F2A55", fg = "#A7D494" }
+
+# File type indicators
+find_keyword = { fg = "#CF8EEC", bold = true, italic = false, underline = false }
+find_position = { fg = "#6B6796" }
+
+# Marker symbols
+marker_copied = { fg = "#A7D494", bg = "#A7D494" }
+marker_cut = { fg = "#E87A98", bg = "#E87A98" }
+marker_selected = { fg = "#CF8EEC", bg = "#CF8EEC" }
+
+# Tab styling
+tab_active = { fg = "#1A1732", bg = "#8AA2F0", bold = true }
+tab_inactive = { fg = "#6B6796", bg = "#211E3F" }
+tab_width = 1
+
+# Count displays
+count_copied = { fg = "#1A1732", bg = "#A7D494" }
+count_cut = { fg = "#1A1732", bg = "#E87A98" }
+count_selected = { fg = "#1A1732", bg = "#CF8EEC" }
+
+# Visual mode
+visual_mode = { fg = "#1A1732", bg = "#CF8EEC", bold = true }
+visual_mode_normal = { fg = "#1A1732", bg = "#C9C2FF", bold = true }
+
+# Progress bar
+progress_label = { fg = "#C9C2FF", bold = true }
+progress_normal = { fg = "#8AA2F0", bg = "#211E3F" }
+progress_error = { fg = "#E87A98", bg = "#211E3F" }
+progress_complete = { fg = "#A7D494", bg = "#211E3F" }
+
+# Permissions
+perm_sep = { fg = "#6B6796" }
+perm_type = { fg = "#8AA2F0" }
+perm_read = { fg = "#A7D494" }
+perm_write = { fg = "#F0A07A" }
+perm_exec = { fg = "#E87A98" }
+perm_acl = { fg = "#CF8EEC" }
+perm_attribute = { fg = "#6B6796" }
+
+[mode]
+# Normal mode (like Neovim normal)
+normal_main = { fg = "#1A1732", bg = "#8AA2F0", bold = true }
+normal_alt = { fg = "#8AA2F0", bg = "#211E3F" }
+
+# Select mode
+select_main = { fg = "#1A1732", bg = "#CF8EEC", bold = true }
+select_alt = { fg = "#CF8EEC", bg = "#211E3F" }
+
+# Unset mode
+unset_main = { fg = "#1A1732", bg = "#E87A98", bold = true }
+unset_alt = { fg = "#E87A98", bg = "#211E3F" }
+
+[status]
+# Status bar separators
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+# Permission display
+perm_sep = { fg = "#6B6796" }
+perm_type = { fg = "#8AA2F0" }
+perm_read = { fg = "#A7D494" }
+perm_write = { fg = "#F0A07A" }
+perm_exec = { fg = "#E87A98" }
+
+[pick]
+# File picker
+title = { fg = "#8AA2F0", bold = true }
+active = { fg = "#CF8EEC", bold = true }
+inactive = { fg = "#6B6796" }
+
+[confirm]
+# Confirmation prompts
+title = { fg = "#F0A07A", bold = true }
+content = { fg = "#C9C2FF" }
+btn_yes = { fg = "#1A1732", bg = "#A7D494" }
+btn_no = { fg = "#1A1732", bg = "#E87A98" }
+btn_labels = { fg = "#C9C2FF" }
+
+[which]
+# Keybinding hints
+title = { fg = "#8AA2F0", bold = true }
+shortcut = { fg = "#CF8EEC", bold = true }
+separator = { fg = "#6B6796" }
+description = { fg = "#C9C2FF" }
+on = { fg = "#A7D494" }
+run = { fg = "#7AD2CE" }
+hover = { bg = "#2F2A55" }
+footer = { fg = "#6B6796" }
+
+[help]
+# Help menu
+title = { fg = "#8AA2F0", bold = true }
+footer = { fg = "#6B6796", italic = true }
+
+[notify]
+# Notifications
+title_info = { fg = "#7AD2CE", bold = true }
+title_warn = { fg = "#F0A07A", bold = true }
+title_error = { fg = "#E87A98", bold = true }
+message = { fg = "#C9C2FF" }
+
+# File-specific highlighting (using Nami 4-color philosophy)
+[filetype]
+# Directories (definitions - blue)
+rules = [
+    { name = "*/", fg = "#8AA2F0", bold = true },
+
+    # Code files (definitions - blue)
+    { mime = "text/*", fg = "#8AA2F0" },
+    { mime = "application/json", fg = "#8AA2F0" },
+
+    # Data/config (constants - magenta)
+    { mime = "application/toml", fg = "#CF8EEC" },
+    { mime = "application/yaml", fg = "#CF8EEC" },
+    { mime = "application/xml", fg = "#CF8EEC" },
+
+    # Executables (constants - magenta)
+    { mime = "application/x-executable", fg = "#CF8EEC", bold = true },
+    { mime = "application/x-pie-executable", fg = "#CF8EEC", bold = true },
+
+    # Media (strings - green)
+    { mime = "image/*", fg = "#A7D494" },
+    { mime = "video/*", fg = "#A7D494" },
+    { mime = "audio/*", fg = "#A7D494" },
+
+    # Archives (warnings - orange)
+    { mime = "application/zip", fg = "#F0A07A" },
+    { mime = "application/x-tar", fg = "#F0A07A" },
+    { mime = "application/gzip", fg = "#F0A07A" },
+
+    # Hidden files (comments - muted)
+    { name = ".*", fg = "#6B6796" },
+
+    # Symlinks (cyan - info)
+    { name = "*", is = "link", fg = "#7AD2CE" },
+
+    # Orphans (errors - red)
+    { name = "*", is = "orphan", fg = "#E87A98" },
+]

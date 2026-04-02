@@ -1,0 +1,31 @@
+# Nami Theme for Zellij
+# https://github.com/micdzu/nami.nvim
+# Copy to ~/.config/zellij/themes/nami.kdl or add to ~/.config/zellij/config.kdl
+
+themes {
+    nami {
+        // UI colors
+        bg "#1A1732"        // Background
+        fg "#C9C2FF"        // Foreground/text
+
+        // Pane borders
+        black "#1A1732"     // Normal border
+        blue "#8AA2F0"      // Active border (blue = definitions)
+
+        // Status indicators
+        green "#A7D494"     // Success/OK
+        yellow "#F0A07A"    // Warning
+        red "#E87A98"       // Error
+        magenta "#CF8EEC"   // Highlight
+        cyan "#7AD2CE"      // Info
+        white "#C9C2FF"     // Bright text
+
+        // Bright variants (for UI elements)
+        orange "#F0A07A"    // Same as yellow/warning
+        gray "#6B6796"      // Comments/muted
+
+        // Additional UI mappings
+        // Zellij uses these for specific UI components
+        purple "#CF8EEC"    // Magenta alias
+    }
+}

@@ -1,0 +1,128 @@
+# Nami Theme for Starship
+# https://github.com/micdzu/nami.nvim
+# Copy to ~/.config/starship.toml
+
+# Palette definitions
+[palettes.nami]
+# Core semantic colors
+background = "#1A1732"
+foreground = "#C9C2FF"
+comment = "#6B6796"
+string = "#A7D494"
+constant = "#CF8EEC"
+func = "#8AA2F0"
+
+# UI colors
+error = "#E87A98"
+warn = "#F0A07A"
+info = "#7AD2CE"
+hint = "#7AD2CE"
+
+# Variations
+bg_light = "#211E3F"
+selection = "#2F2A55"
+fg_dark = "#6B6796"
+
+# Format settings
+format = """$username$hostname$directory$git_branch$git_status$cmd_duration$line_break$character"""
+
+# Prompt character
+[character]
+success_symbol = "[❯](#A7D494)"
+error_symbol = "[❯](#E87A98)"
+
+# Username (shown when root or remote)
+[username]
+style_user = "#C9C2FF"
+style_root = "#E87A98 bold"
+format = "[$user]($style) "
+disabled = false
+show_always = false
+
+# Hostname (shown when remote)
+[hostname]
+ssh_symbol = "🌐 "
+style = "#8AA2F0"
+format = "[$ssh_symbol$hostname]($style) "
+disabled = false
+
+# Directory path
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "#8AA2F0 bold"  # Blue = definitions (directories define scope)
+read_only = " 🔒"
+read_only_style = "#E87A98"
+translation = "en"
+
+# Git branch
+[git_branch]
+symbol = ""
+style = "#CF8EEC"  # Magenta = constants (branch names are fixed references)
+format = "[$symbol$branch]($style) "
+
+# Git status
+[git_status]
+style = "#C9C2FF"
+conflicted = "=${count}"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕${count}"
+up_to_date = ""
+untracked = "+${count}"
+stashed = "📦"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+# Command duration
+[cmd_duration]
+min_time = 2000
+format = "took [$duration]($style) "
+style = "#F0A07A"  # Orange = warning (slow commands)
+
+# Programming languages (use func color - definitions)
+[rust]
+symbol = ""
+style = "#8AA2F0"
+
+[nodejs]
+symbol = "⬢ "
+style = "#8AA2F0"
+
+[python]
+symbol = ""
+style = "#8AA2F0"
+
+[golang]
+symbol = ""
+style = "#8AA2F0"
+
+[ruby]
+symbol = "💎 "
+style = "#8AA2F0"
+
+# Background jobs
+[jobs]
+symbol = "✦"
+style = "#F0A07A"
+
+# Battery (when available)
+[battery]
+full_symbol = "•"
+charging_symbol = "⇡"
+discharging_symbol = "⇣"
+empty_symbol = "•"
+
+[[battery.display]]
+threshold = 20
+style = "#E87A98"  # Red = error (low battery)
+
+[[battery.display]]
+threshold = 50
+style = "#F0A07A"  # Orange = warning
+
+[[battery.display]]
+threshold = 100
+style = "#A7D494"  # Green = good

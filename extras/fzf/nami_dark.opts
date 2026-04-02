@@ -1,0 +1,11 @@
+# Nami Dark Theme for FZF
+# https://github.com/micdzu/nami.nvim
+# Add to ~/.bashrc or ~/.zshrc:
+# export FZF_DEFAULT_OPTS="$(cat ~/.config/fzf/nami-dark.opts)"
+
+--color=fg:#C9C2FF,fg+:#C9C2FF,bg:#1A1732,bg+:#2F2A55
+--color=hl:#8AA2F0,hl+:#8AA2F0,info:#6B6796,marker:#A7D494
+--color=prompt:#CF8EEC,spinner:#7AD2CE,pointer:#CF8EEC,header:#6B6796
+--color=border:#6B6796,label:#C9C2FF,query:#C9C2FF
+--border="rounded" --border-label="" --preview-window="border-rounded"
+--prompt="> " --marker=">" --pointer="◆" --separator="─"

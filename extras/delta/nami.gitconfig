@@ -1,0 +1,61 @@
+# Nami Theme for Delta
+# https://github.com/micdzu/nami.nvim
+# 
+# Usage:
+#   Option 1: Use with bat theme (recommended)
+#     git config --global core.pager "delta --bat-theme=nami"
+#
+#   Option 2: Use this standalone config
+#     Copy contents to ~/.gitconfig or source from file
+
+[delta]
+    # Use nami bat theme if available, otherwise define colors below
+    bat-theme = nami
+
+    # File headers
+    file-style = "#C9C2FF bold"
+    file-decoration-style = "#6B6796 ul"
+    file-added-label = "[+]#A7D494"
+    file-copied-label = "[=]"
+    file-modified-label = "[~]#F0A07A"
+    file-removed-label = "[-]#E87A98"
+    file-renamed-label = "[→]"
+
+    # Hunk headers
+    hunk-header-style = "#C9C2FF"
+    hunk-header-decoration-style = "#6B6796 box"
+    hunk-header-file-style = "#8AA2F0"
+    hunk-header-line-number-style = "#CF8EEC"
+
+    # Line numbers
+    line-numbers = true
+    line-numbers-left-style = "#6B6796"
+    line-numbers-right-style = "#6B6796"
+    line-numbers-minus-style = "#E87A98"
+    line-numbers-plus-style = "#A7D494"
+    line-numbers-zero-style = "#6B6796"
+
+    # Diff content
+    minus-style = "#E87A98"
+    minus-emph-style = "#E87A98 bold"
+    minus-non-emph-style = "#A2556A"
+    plus-style = "#A7D494"
+    plus-emph-style = "#A7D494 bold"
+    plus-non-emph-style = "#647F58"
+
+    # Context
+    zero-style = "#C9C2FF"
+
+    # Highlights
+    whitespace-error-style = "#E87A98 reverse"
+
+    # Blame
+    blame-code-style = "#C9C2FF"
+    blame-format = "{author:<18} {commit:<6} {timestamp:<15}"
+    blame-palette = "#1A1732 #211E3F #2F2A55 #6B6796"
+
+    # Merge conflicts
+    merge-conflict-begin-symbol = "▼"
+    merge-conflict-end-symbol = "▲"
+    merge-conflict-ours-diff-header-style = "#8AA2F0 bold"
+    merge-conflict-theirs-diff-header-style = "#CF8EEC bold"

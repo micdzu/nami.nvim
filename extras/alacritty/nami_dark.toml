@@ -1,0 +1,44 @@
+# Nami Dark Theme for Alacritty
+# https://github.com/micdzu/nami.nvim
+
+[colors.primary]
+background = "#1A1732"
+foreground = "#C9C2FF"
+
+[colors.cursor]
+text = "#1A1732"
+cursor = "#C9C2FF"
+
+[colors.selection]
+text = "#C9C2FF"
+background = "#2F2A55"
+
+[colors.normal]
+black = "#1A1732"
+red = "#E87A98"
+green = "#A7D494"
+yellow = "#F0A07A"
+blue = "#8AA2F0"
+magenta = "#CF8EEC"
+cyan = "#7AD2CE"
+white = "#C9C2FF"
+
+[colors.bright]
+black = "#6B6796"
+red = "#E87A98"
+green = "#A7D494"
+yellow = "#F0A07A"
+blue = "#8AA2F0"
+magenta = "#CF8EEC"
+cyan = "#7AD2CE"
+white = "#D8D2FF"
+
+[[colors.indexed_colors]]
+index = 16
+name = "Orange"
+color = "#F0A07A"
+
+[[colors.indexed_colors]]
+index = 17
+name = "Pink"
+color = "#C686B2"
